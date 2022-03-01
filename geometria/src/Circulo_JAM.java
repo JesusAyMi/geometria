@@ -7,6 +7,9 @@ public class Circulo_JAM extends FiguraGeometrica_JAM {
 	public Circulo_JAM(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio<0){
+			radio = radio * -1;
+		}
 	}
 
 	@Override
